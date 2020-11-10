@@ -72,7 +72,7 @@ a{
 .lead__name{
     align-self: stretch;
     margin: 0;
-    max-width: 124px;
+    width: 124px;
     grid-area:Name;
     color: #070707;
     font-family: Gilroy-Bold;
@@ -156,6 +156,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-self: center;
+    max-width: 100%;
 }
 
 .skills__title{
@@ -189,7 +190,8 @@ a{
 }
 
 .skills__image{
-    width: 89.07px;
+    width: 100%;
+    max-width: 89.07px;
     margin: auto;
     margin-bottom: 24px;
     
@@ -203,7 +205,8 @@ a{
     color: #828282;
     margin: auto;
     margin-bottom: 21px;
-    width: 70px;
+    max-width: 70px;
+    width: 100%;
 }
 
 .skills__stars{
@@ -231,7 +234,7 @@ a{
 }
 
 .portfolio__image{
-    width: calc(100%-508px);
+    max-width: 100%;
     margin: auto;
 }
 
@@ -253,6 +256,7 @@ opacity: 0.6;
 
 .footer{
     margin-top: 114px;
+    margin-bottom:123px;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -316,4 +320,22 @@ opacity: 0.6;
     text-align: center;
     color: #828282;
     margin: auto;
+   
+}
+
+@media screen and (max-width: 1000px){
+    .skills__ilustrates{
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .lead{
+        margin: auto;
+    }
+
+    .lead__name{
+        width: 80px;
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
